@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="demoWebShopTestSuite">
+
+	<listeners>
+		<listener class-name="com.qa.demoWebShop.listeners.ExtentReportListener"></listener>
+	</listeners>
+
+	<test thread-count="5" name="demoWebShopTest">
+		<classes>
+			<class name="com.qa.demoWebShop.testcases.DwsLoginPageTest" />
+			<class name="com.qa.demoWebShop.testcases.DwsHomePageTest" />
+			<class name="com.qa.demoWebShop.testcases.DwsWelcomePageTest" />
+			<class name="com.qa.demoWebShop.testcases.DwsDesktopsPageTest" />
+			
+			
+		</classes>
+	</test> <!-- demoWebShopTest -->
+</suite> <!-- demoWebShopTestSuite -->
